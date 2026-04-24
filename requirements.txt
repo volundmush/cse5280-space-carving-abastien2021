@@ -1,0 +1,15 @@
+ipython
+numpy
+torch
+pytorch3d
+open3d
+opencv-python
+ipykernel
+ipywidgets
+imageio
+requests
+matplotlib
+scipy
+pillow
+scikit-image
+tqdm
