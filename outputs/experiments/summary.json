@@ -1,0 +1,38 @@
+[
+  {
+    "run": "outputs/experiments/views_10_vox_64",
+    "views": 10,
+    "voxel_resolution": 64,
+    "occupied_voxels": 27524,
+    "occupancy_ratio": 0.1049957275390625,
+    "runtime_sec": 31.20828890800476,
+    "mesh": "outputs/experiments/views_10_vox_64/reconstruction/visual_hull_mesh.ply"
+  },
+  {
+    "run": "outputs/experiments/views_30_vox_96",
+    "views": 30,
+    "voxel_resolution": 96,
+    "occupied_voxels": 86642,
+    "occupancy_ratio": 0.0979297779224537,
+    "runtime_sec": 56.008410692214966,
+    "mesh": "outputs/experiments/views_30_vox_96/reconstruction/visual_hull_mesh.ply"
+  },
+  {
+    "run": "outputs/experiments/views_50_vox_96",
+    "views": 50,
+    "voxel_resolution": 96,
+    "occupied_voxels": 85631,
+    "occupancy_ratio": 0.09678706416377315,
+    "runtime_sec": 63.60392642021179,
+    "mesh": "outputs/experiments/views_50_vox_96/reconstruction/visual_hull_mesh.ply"
+  },
+  {
+    "run": "outputs/experiments/views_5_vox_64",
+    "views": 5,
+    "voxel_resolution": 64,
+    "occupied_voxels": 32300,
+    "occupancy_ratio": 0.1232147216796875,
+    "runtime_sec": 41.05140972137451,
+    "mesh": "outputs/experiments/views_5_vox_64/reconstruction/visual_hull_mesh.ply"
+  }
+]

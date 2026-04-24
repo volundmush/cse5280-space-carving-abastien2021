@@ -1,0 +1,36 @@
+{
+  "config": {
+    "mesh_path": null,
+    "out_dir": "outputs/experiments/views_10_vox_64",
+    "num_views": 10,
+    "image_size": 256,
+    "fov_deg": 60.0,
+    "camera_distance": 2.7,
+    "elev_min": -20.0,
+    "elev_max": 40.0,
+    "silhouette_threshold": 0.5,
+    "save_depth": false,
+    "voxel_resolution": 64,
+    "grid_bounds": 1.1,
+    "chunk_size": 300000,
+    "skip_reconstruction": false,
+    "recon_method": "poisson",
+    "poisson_depth": 8,
+    "device": "cpu"
+  },
+  "resolved_device": "cpu",
+  "render": {
+    "num_views": 10,
+    "image_size": 256,
+    "silhouette_threshold": 0.5
+  },
+  "voxel_grid_total": 262144,
+  "occupied_voxels": 27524,
+  "occupancy_ratio": 0.1049957275390625,
+  "outputs": {
+    "point_cloud": "outputs/experiments/views_10_vox_64/carving/visual_hull_points.ply",
+    "mesh": "outputs/experiments/views_10_vox_64/reconstruction/visual_hull_mesh.ply",
+    "projection_overlay": "outputs/experiments/views_10_vox_64/carving/projection_overlay_view0.png"
+  },
+  "runtime_sec": 31.20828890800476
+}
