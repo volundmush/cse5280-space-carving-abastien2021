@@ -24,7 +24,7 @@ We render a mesh from multiple viewpoints using PyTorch3D.
   - Optional depth map
   - Camera parameters converted to OpenCV form (`R`, `t`, `K`)
 
-### 1.2 Pinhole projection model
+### 1.2 Pinhole projection model (Math-tastic Mess)
 
 For each voxel center `X` in world coordinates:
 
@@ -58,6 +58,8 @@ For each camera view:
 - remove voxels that are invalid or outside the silhouette
 
 After all views, remaining voxels approximate the visual hull.
+
+This is approximately like when a sculptor takes pictures around a posing model and then starts chiseling a hunk of stone or molding clay to match what they see from that angle.
 
 ### 1.4 Reconstruction
 
@@ -93,6 +95,8 @@ Notes:
 
 - `pytorch3d` installation is environment-specific (PyTorch/CUDA compatibility matters).
 - If needed, install a matching PyTorch3D wheel manually for your system.
+
+I had a seriously hard time getting this working on my Bazzite desktop which is running an old 980ti and doesn't support the new CUDA stuff... had to render using CPU mode, ugh.
 
 ## 4) Running
 
@@ -131,6 +135,8 @@ Override defaults:
 ```bash
 PARALLEL=4 DEVICE=cpu OUT_ROOT=outputs/experiments MESH_PATH=path/to/model.obj bash run_parallel.sh
 ```
+
+Since I didn't have a compatible GPU (my 3090ti died a few weeks ago and now I had to dig out an old 980ti), CPU rendering mode saved the day at a full PARALLEL=32, because I have a beefy AMD Ryzen 5950X. 
 
 ## 5) Outputs
 
